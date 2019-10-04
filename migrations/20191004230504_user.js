@@ -1,4 +1,5 @@
 
+// were using users in plural because user is a keyword in postgres
 exports.up = (knex, Promise) => {
   return knex.schema.createTable('users', (table) => {
     table.increments();
